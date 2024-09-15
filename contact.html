@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Chocolate Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Choco.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or inquiries, feel free to reach out!</p>
+        <form action="submit_form.html" method="POST">
+    <!-- Name input: required field -->
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Please enter letters only.">
+    
+    <!-- Email input: optional field -->
+    <label for="email">Your Email (optional)</label>
+    <input type="email" id="email" name="email">
+
+    <!-- Phone number input: optional field -->
+    <label for="phone">Your Phone Number (optional)</label>
+    <input type="tel" id="phone" name="phone" pattern="\d{2}/\d{6}" title="Phone number format: 81/457189">
+
+    <!-- Message input: required field -->
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" required minlength="10"></textarea>
+
+    <!-- Submit button -->
+    <button type="submit">Send Message</button>
+</form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chocolate Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

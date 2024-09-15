@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4b2e39;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('chocolate-hero.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.cta {
+    background-color: #e8c3b9;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #4b2e39;
+    font-weight: bold;
+}
+
+.products {
+    padding: 40px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    margin: 20px;
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+}
+
+.btn {
+    display: block;
+    background-color: #4b2e39;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #4b2e39;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+/* Optional fields */
+input[type="email"], input[type="tel"] {
+    border: 1px solid #aaa; /* Slightly lighter border for optional fields */
+}
+
+/* Add some margin to separate form sections */
+input, textarea {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
